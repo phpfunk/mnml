@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mnml.io</title> <!-- Not sure what attribute to use to access site titles, keeping as-is -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen">
+	<script src="javascripts/magic.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<h1><a data-barley-editor="mini" href="#">Mnml</a></h1> <!-- Not sure what tag to use for site homepage, used # -->
+		<section id="description"><p data-barley-editor="simple">A simple, minimalistic blog template created for <a href="http://getbarley.com">Barley</a>. Meant for clean and readable blogs.</p></section>
+		<nav data-barley-editor="plus"><a href="#">Feed</a><a href="#">Archive</a><a href="#">Twitter</a><a href="#">Search</a></nav>
+	</header>
+	<div id="divider"></div>
+	<!-- repeat:blogpost -->
+	<section class="post">
+		<h1 class="title"><a href="%URL%">%TITLE%</a></h1>
+		<p class="meta">Written on <a href="%URL%" data-barley-publish-post="%ID%">%PUBLISHED_ON%</a> by <a href="%URL%">%AUTHOR%</a></p>
+		<section class="content">
+			%EXCERPT%
+			<a href="%URL%" class="more">&rarr;</a>
+		</section>
+	</section>
+	<!-- endrepeat -->
+</body>
+</html>
