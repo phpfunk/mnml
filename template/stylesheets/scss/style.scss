@@ -113,12 +113,9 @@ section.post {
 		line-height: 1.5em;
 		font-size: 0.7em;
 		padding-bottom: 0.5em;
-		a {
-			&, &:hover, &:active, &:visited {
-				color: black;
-				font-weight: 700;
-				text-decoration: none;
-			}
+		span {
+			color: black;
+			font-weight: 700;
 		}
 	}
 	
